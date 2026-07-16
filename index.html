@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>For You</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ambient atmosphere layer: petals, fireflies, bokeh, hearts -->
+  <div class="atmosphere" aria-hidden="true">
+    <div class="bokeh bokeh--1"></div>
+    <div class="bokeh bokeh--2"></div>
+    <div class="bokeh bokeh--3"></div>
+    <div id="particles"></div>
+  </div>
+
+  <main class="stage">
+    <div class="locket" id="locket">
+
+      <div class="locket__ring">
+        <div class="locket__clasp"></div>
+
+        <div class="locket__glass">
+          <p class="eyebrow">a little something, just for you</p>
+          <h1 class="title">With All My Heart</h1>
+          <p class="subtitle">press play, and listen close</p>
+
+          <button id="playBtn" class="play-btn" aria-label="Play the message">
+            <span class="play-btn__ripple"></span>
+            <span class="play-btn__ripple play-btn__ripple--delay"></span>
+            <svg class="play-btn__icon icon-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 5.5v13a1 1 0 0 0 1.53.85l10.4-6.5a1 1 0 0 0 0-1.7L8.53 4.65A1 1 0 0 0 7 5.5Z" fill="currentColor"/>
+            </svg>
+            <svg class="play-btn__icon icon-pause" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
+              <rect x="6" y="5" width="4.5" height="14" rx="1.5" fill="currentColor"/>
+              <rect x="13.5" y="5" width="4.5" height="14" rx="1.5" fill="currentColor"/>
+            </svg>
+          </button>
+
+          <div class="wordmark">for the one who has my whole heart</div>
+        </div>
+      </div>
+
+      <audio id="audio" preload="none">
+        <source src="v.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
